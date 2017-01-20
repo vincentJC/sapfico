@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+# -*- encoding:utf-8 -*-
 import os.path
 
 
@@ -13,3 +15,5 @@ settings = {
     #设置gzip压缩：
     'gzip':True,
 }
+
+upload_path=os.path.join(settings['static_path'], 'uploadfiles')

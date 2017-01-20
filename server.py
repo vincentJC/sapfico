@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+# -*- encoding:utf-8 -*-
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
