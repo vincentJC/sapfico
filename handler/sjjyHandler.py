@@ -49,6 +49,6 @@ class downloadHandler(tornado.web.RequestHandler):
         self.write('<p style="color:green">正在验证数据，请等待！</p><br>')
         self.flush()
         #time.sleep(2)
-        option.dataCheck.checkall(fileNewList)
+        option.dataCheck.checkall(*fileNewList)
         self.write('<p style="color:green">数据验证完毕，请下载数据</p><br>')
         self.render('check.html', files=fileNewList)
